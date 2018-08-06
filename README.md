@@ -1,4 +1,5 @@
 # wordpress
-wordpressのソースコード
-## theme
-wordpressのオリジナルテーマ
+
+====
+
+Source code related to Word Press
