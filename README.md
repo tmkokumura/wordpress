@@ -1,2 +1,4 @@
 # wordpress
-wordpress
+wordpressのソースコード
+## theme
+wordpressのオリジナルテーマ
