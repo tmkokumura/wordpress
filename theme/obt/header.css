@@ -1,0 +1,134 @@
+#header {
+    background-color:#efefef;
+}
+
+.header__blog-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 4.0rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+.header__blog-title {
+    padding-top: 2.0rem;
+    font-size: 2.0rem;
+}
+}
+
+/* メインメニュー（スマホ用） */
+@media screen and (max-width: 799px) {
+
+.menu-trigger-wrapper {
+    width: 35px;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.menu-trigger, .menu-trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+.menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+}
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #888888;
+    border-radius: 2px;
+}
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+    top: 10px;
+}
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-200%);
+    transition: all 0.6s;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu.active {
+    position: fixed;
+    transition: all 0.6s;
+    transform: translateY(0%);
+}
+
+.menu-item {
+    width: 100%;
+    background-color: #404040;
+    border-bottom: solid 0.1rem #dcdcdc;
+}
+
+.menu-item a{
+    display: block;
+    width: 100%;
+    padding-left: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2.5;
+}
+
+.menu-item:last-child{
+    border-bottom: none;
+}
+
+.menu-item a:hover{
+    background-color: #dcdcdc;
+}
+}
+/* メインメニュー（PC用） */
+@media screen and (min-width: 800px) {
+.menu-trigger-wrapper {
+    display: none;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.menu-item a{
+    display: block;
+    padding-top: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 3rem;
+}
+
+.menu-item a:hover{
+    background-color: #dcdcdc;
+}
+}

@@ -1,0 +1,9 @@
+#footer {
+    background-color:#efefef;
+}
+
+.footer__copylight {
+    font-size: 0.8rem;
+    line-height: 3.0rem;
+    text-align: center;
+}
